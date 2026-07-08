@@ -62,6 +62,6 @@ st.write("Tertarik untuk berkolaborasi atau mendiskusikan peluang karir? Jangan 
 
 st.write("- 💼 **LinkedIn:** [Kunjungi Profil LinkedIn Saya](#)") 
 st.write("- 🐙 **GitHub:** [Lihat Source Code Proyek Saya](https://github.com/tieftiara-crypto)")
-st.write("- ✉️ **Email:** eftiara@email.com")
+st.write("- ✉️ **Email:** tieftiara@email.com")
 
 st.caption("Dibuat dengan ❤️ menggunakan Python dan Streamlit")
