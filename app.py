@@ -1,15 +1,15 @@
 import streamlit as st
 
-# Setup Halaman
-st.set_page_config(page_title="Portofolio | Eftiara", page_icon="✨", layout="wide")
+# Setup Page
+st.set_page_config(page_title="Eftiara | AI Engineer", page_icon="✨", layout="wide")
 
-# Custom CSS biar estetik (Dark Mode Elegan)
+# Custom CSS for aesthetic Dark Mode
 st.markdown("""
 <style>
     .stApp { background-color: #121212; }
     h1, h2, h3, p, li { color: #E0E0E0 !important; }
     
-    /* Bikin kotak project biar rapi */
+    /* Project box styling */
     .project-box {
         background-color: #1E1E1E;
         padding: 20px;
@@ -20,48 +20,47 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# --- BAGIAN HERO (PERKENALAN) ---
-st.title("Welcome to Eftiara Labs 🧪")
+# --- HERO SECTION ---
+st.title("Hi, I'm Eftiara! 👋")
 st.subheader("🚀 AI Engineer & Web Developer")
-st.write("Selamat datang di CV Digital saya. Saya memiliki *passion* dalam merancang dan membangun aplikasi *Artificial Intelligence* (AI) interaktif yang berfokus pada asisten pintar dan otomatisasi analisis data bisnis.")
+st.write("Welcome to my digital space. I am passionate about designing and building interactive Artificial Intelligence (AI) applications focused on smart assistants and data-driven business solutions.")
 
 st.markdown("---")
 
-# --- BAGIAN ETALASE PROYEK ---
-st.header("💻 Etalase Proyek AI Terkini")
-st.write("Berikut adalah aplikasi *Full-Stack AI* yang telah saya kembangkan dan *deploy* ke publik:")
+# --- PROJECTS SHOWCASE ---
+st.header("💻 Featured AI Projects")
+st.write("Here are the Full-Stack AI applications I have developed and deployed:")
 
-# Bikin 2 kolom berdampingan
+# 2 Columns for Projects
 col1, col2 = st.columns(2)
 
 with col1:
     st.markdown("""
     <div class="project-box">
         <h3>🤖 Efti-Bot: Ultimate AI</h3>
-        <p>Asisten AI multifungsi dengan gaya bahasa kasual. Dilengkapi memori percakapan, kemampuan membaca gambar (AI Vision), dan fitur pelukis digital (Text-to-Image) bertenaga Imagen 3.</p>
+        <p>A multifunctional AI assistant featuring conversational memory, AI Vision for image analysis, and a digital painter (Text-to-Image) powered by Imagen 3.</p>
     </div>
     """, unsafe_allow_html=True)
-    # LINK KE WEB PERTAMA LU
-    st.markdown("[**👉 KLIK DI SINI UNTUK COBA APLIKASI**](https://web-ai-eftiara.streamlit.app)")
+    st.markdown("[**👉 TRY THE APP HERE**](https://web-ai-eftiara.streamlit.app)")
 
 with col2:
     st.markdown("""
     <div class="project-box">
         <h3>📊 AI Business Analyzer</h3>
-        <p>Alat cerdas pembedah data ulasan bisnis (Excel/CSV). Secara otomatis mendeteksi rasio sentimen pelanggan dan merumuskan rekomendasi strategi bisnis layaknya konsultan profesional.</p>
+        <p>A smart data tool that extracts business insights from customer reviews (Excel/CSV). Automatically detects sentiment ratios and formulates strategic executive recommendations.</p>
     </div>
     """, unsafe_allow_html=True)
-    # LINK KE WEB KEDUA LU (Ganti tulisan di dalam kurung URL dengan link web lu yang kedua tadi)
-    st.markdown("[**👉 KLIK DI SINI UNTUK COBA APLIKASI**](https://review-analyzer-eftiara.streamlit.app/)")
+    # JANGAN LUPA GANTI TULISAN DI DALAM KURUNG INI DENGAN LINK WEB KEDUA LU
+    st.markdown("[**👉 TRY THE APP HERE**](https://review-analyzer-eftiara.streamlit.app/)")
 
 st.markdown("---")
 
-# --- BAGIAN KONTAK ---
-st.header("📬 Mari Terhubung")
-st.write("Tertarik untuk berkolaborasi atau mendiskusikan peluang karir? Jangan ragu untuk menghubungi saya melalui tautan di bawah ini:")
+# --- CONTACT SECTION ---
+st.header("📬 Let's Connect")
+st.write("Interested in collaborating or discussing career opportunities? Feel free to reach out through the links below:")
 
-st.write("- 💼 **LinkedIn:** [Kunjungi Profil LinkedIn Saya](#)") 
-st.write("- 🐙 **GitHub:** [Lihat Source Code Proyek Saya](https://github.com/tieftiara-crypto)")
+st.write("- 💼 **LinkedIn:** [Visit My LinkedIn Profile](#)") 
+st.write("- 🐙 **GitHub:** [Check Out My Repositories](https://github.com/tieftiara-crypto)")
 st.write("- ✉️ **Email:** tieftiara@email.com")
 
-st.caption("Dibuat dengan ❤️ menggunakan Python dan Streamlit")
+st.caption("Built with ❤️ using Python and Streamlit")
