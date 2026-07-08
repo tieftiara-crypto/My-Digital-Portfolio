@@ -52,7 +52,7 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
     # LINK KE WEB KEDUA LU (Ganti tulisan di dalam kurung URL dengan link web lu yang kedua tadi)
-    st.markdown("[**👉 KLIK DI SINI UNTUK COBA APLIKASI**](MASUKKAN_LINK_WEB_KEDUA_LU_DI_SINI)")
+    st.markdown("[**👉 KLIK DI SINI UNTUK COBA APLIKASI**](https://review-analyzer-eftiara.streamlit.app/)")
 
 st.markdown("---")
 
