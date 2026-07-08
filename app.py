@@ -3,7 +3,7 @@ import streamlit as st
 # Setup Page
 st.set_page_config(page_title="Eftiara | AI Engineer", page_icon="✨", layout="wide")
 
-# Custom CSS for aesthetic Dark Mode
+# Custom CSS for aesthetic Dark Mode & Marquee Loop
 st.markdown("""
 <style>
     .stApp { background-color: #121212; }
@@ -17,7 +17,36 @@ st.markdown("""
         border-left: 5px solid #00FFAA;
         margin-bottom: 20px;
     }
+    
+    /* Marquee styling (Teks Berjalan ala Startup Web) */
+    .marquee-container {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        background-color: #0a0a0a;
+        padding: 10px 0;
+        margin-bottom: 30px;
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+    }
+    .marquee-text {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 15s linear infinite;
+        color: #00FFAA; /* Warnanya disamain sama garis project biar matching */
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    @keyframes marquee {
+        0% { transform: translate(0, 0); }
+        100% { transform: translate(-100%, 0); }
+    }
 </style>
+
+<div class="marquee-container">
+    <span class="marquee-text">✦ EFTIARA PORTFOLIO ✦ AI ENGINEER ✦ WEB DEVELOPER ✦ PYTHON ENTHUSIAST ✦ DATA ANALYST ✦</span>
+</div>
 """, unsafe_allow_html=True)
 
 # --- HERO SECTION ---
@@ -50,7 +79,6 @@ with col2:
         <p>A smart data tool that extracts business insights from customer reviews (Excel/CSV). Automatically detects sentiment ratios and formulates strategic executive recommendations.</p>
     </div>
     """, unsafe_allow_html=True)
-    # JANGAN LUPA GANTI TULISAN DI DALAM KURUNG INI DENGAN LINK WEB KEDUA LU
     st.markdown("[**👉 TRY THE APP HERE**](https://review-analyzer-eftiara.streamlit.app/)")
 
 st.markdown("---")
