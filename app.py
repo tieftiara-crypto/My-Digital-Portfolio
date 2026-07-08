@@ -21,7 +21,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- BAGIAN HERO (PERKENALAN) ---
-st.title("Halo, Saya Eftiara! 👋")
+st.title("Welcome to Eftiara Labs 🧪")
 st.subheader("🚀 AI Engineer & Web Developer")
 st.write("Selamat datang di CV Digital saya. Saya memiliki *passion* dalam merancang dan membangun aplikasi *Artificial Intelligence* (AI) interaktif yang berfokus pada asisten pintar dan otomatisasi analisis data bisnis.")
 
