@@ -99,6 +99,6 @@ st.write("Interested in collaborating or discussing career opportunities? Feel f
 
 st.write("- 💼 **LinkedIn:** [Visit My LinkedIn Profile](#)") 
 st.write("- 🐙 **GitHub:** [Check Out My Repositories](https://github.com/tieftiara-crypto)")
-st.write("- ✉️ **Email:** tieftiara@email.com")
+st.write("- ✉️ **Email:** tieftiara@gmail.com")
 
 st.caption("Built with ❤️ using Python and Streamlit")
